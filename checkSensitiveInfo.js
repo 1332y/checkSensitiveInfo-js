@@ -19,6 +19,14 @@ let Regex = {
 
 let SensitveInfo = {}
 
+if(document) {
+    SensitveInfo.timestamp = (new Date()).getTime();
+    SensitveInfo.domain = document.domain || '';
+    SensitveInfo.url = document.URL || '';
+    SensitveInfo.title = document.title || '';
+    SensitveInfo.referrer = document.referrer || '';
+    }
+
 function search(reg) {
     let wrap = document.body;
     let innerHTML = wrap.innerHTML;
