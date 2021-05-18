@@ -50,7 +50,7 @@ function postToServer(data) {
             console.log("发生成功");
         }
     }
-    //httpRequest.send(JSON.stringify(data)); //设置为发送给服务器数据
+    //httpRequest.send(JSON.stringify(data));
     httpRequest.send(data);
 }
 
