@@ -28,7 +28,4 @@ if __name__ == '__main__':
     BUFSIZE=1024
     ADDR=(HOST, PORT)
 
-    # /-- network ---
-    # for line in incoming(HOST, PORT):
-    #     print(line)
     incoming(ADDR)
